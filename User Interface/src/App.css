@@ -1,0 +1,278 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #00ccff 0%, #66ccff 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.App-header {
+  background: rgba(128, 213, 255, 0.9); /* lighter blue with transparency */
+  padding: 40px 20px;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.7);
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0099ff;
+}
+
+.learn-mode-toggle {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.learn-mode-toggle:hover {
+  background-color: #0055cc;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.connect-button, .action-button {
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+}
+
+.connect-button:hover, .action-button:hover {
+  background-color: #007acc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.connect-button:focus, .action-button:focus {
+  outline: none;
+}
+
+.about {
+  text-align: left;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.about p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.about a {
+  color: #0099ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.about a:hover {
+  color: #007acc;
+}
+
+.tutorial {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+.learn-mode-toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.learn-mode-label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.learn-mode-toggle input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switch {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background: #ddd;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.switch:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.learn-mode-toggle input:checked + .switch {
+  background: #15c426;
+}
+
+.learn-mode-toggle input:checked + .switch:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switch:active:after {
+  width: 28px;
+}
+
+/* General button styling */
+button {
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Connect Button */
+.connect-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.connect-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Disconnect Button */
+.disconnect-button {
+  background-color: #dc3545; /* Red color */
+  color: white;
+  margin-top: 10px; /* Space between account info and button */
+}
+
+.disconnect-button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .disconnect-button, .connect-button {
+    width: 100%; /* Make buttons full-width on mobile devices */
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+}

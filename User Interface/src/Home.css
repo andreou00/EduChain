@@ -1,0 +1,96 @@
+.main-container {
+  display: flex;
+  justify-content: space-between; /* Ensure spacing between function windows and the tutorial section */
+  padding: 20px;
+}
+
+.functions-container {
+  flex: 1; /* Allow the function windows to take up the remaining space */
+  margin-right: 20px; /* Space between functions and tutorial */
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.learn-button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin-top: 10px;
+}
+
+.learn-button:hover {
+  background-color: #e68a00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-section {
+  flex: 0 0 35%; /* Ensure the tutorial section takes up a fixed portion of the space */
+  background: #f0f8ff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.tutorial h3 {
+  color: #333;
+}
+
+.tutorial ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.tutorial ul li {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column-reverse; /* Stack tutorial section before functions on small screens */
+  }
+
+  .tutorial-section {
+    margin-bottom: 20px; /* Space between tutorial and functions on small screens */
+    width: 100%; /* Full width on small screens */
+  }
+
+  .functions-container {
+    width: 100%; /* Ensure full width on small screens */
+  }
+}
+
+.tutorial-image {
+  width: 100%;
+  max-width: 300px; /* Adjust the max width to resize the images */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
