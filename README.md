@@ -1,5 +1,6 @@
 
 # EduTransfer DApp
+![logo](https://github.com/user-attachments/assets/34a75939-7640-4eeb-adc6-b507ae55778d)
 
 [Live Demo](https://edutransfer.netlify.app/)
 
