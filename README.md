@@ -89,13 +89,7 @@ Experience EduTransfer yourself with our live demo: [EduTransfer DApp](https://e
    npm run build
    ```
 
-## Contributing
 
-Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 
